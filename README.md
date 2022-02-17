@@ -16,11 +16,11 @@ Para instalação das dependências e execução do projeto é necessário [Node
 Execute o seguinte comando dentro da pasta do projeto para instalação das depêndencias:
 
 ```
-npm i
+yarn
 ```
 ### Scripts de utilização
 
 Os comandos apresentados devem ser executados dentro da pasta do projeto:
 
-```npm run dev``` | Executa o projeto em modo de desenvolvimento
-```npm run build``` | Compila a aplicação para produção
+```yarn dev``` | Executa o projeto em modo de desenvolvimento
+```yarn build``` | Compila a aplicação para produção
