@@ -12,6 +12,8 @@ root {
   margin: 0;
   font-family: "Work sans", sans-serif;
   min-height: 100% !important;
+  overflow-x: hidden;
+  scrollbar-width: thin;
 }
 
 a {

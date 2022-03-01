@@ -1,0 +1,20 @@
+.blogPreviewComponent {
+  background-color: #e2e2e2;
+  background-image: url(../../shared/media/images/backgroundBlog.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 130px;
+  padding-bottom: 250px;
+  margin-bottom: -100px;
+}
+
+.blogPreviewCarouselInner {
+  :global .carousel-item {
+    padding: 10px;
+  }
+}
+
+.blogPreviewCarouselIndicators {
+  position: relative !important;
+}
