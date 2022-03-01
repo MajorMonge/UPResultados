@@ -2,8 +2,6 @@ import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-import styles from "./Navbar.module.css";
-
 function Navbar() {
   const router = useRouter();
 
@@ -22,7 +20,7 @@ function Navbar() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <i className="uil uil-bars text-white"></i>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-lg-auto mb-2 mb-lg-0">
@@ -35,13 +33,19 @@ function Navbar() {
                   : ""
               }`}
             >
-              <Link href="/" title="HOME">HOME</Link>
+              <Link href="/" title="HOME">
+                HOME
+              </Link>
             </li>
             <li className="nav-item">
-              <Link href="#sobre" title="SOBRE">SOBRE</Link>
+              <Link href="#sobre" title="SOBRE">
+                SOBRE
+              </Link>
             </li>
             <li className="nav-item">
-              <Link href="#marketingmedico" title="MARKETING MÉDICO">MARKETING MÉDICO</Link>
+              <Link href="#marketingmedico" title="MARKETING MÉDICO">
+                MARKETING MÉDICO
+              </Link>
             </li>
             <li
               className="nav-item"
@@ -49,7 +53,9 @@ function Navbar() {
                 router.pathname == "/blog" ? "active" : ""
               }`}
             >
-              <Link href="/blog" title="BLOG">BLOG</Link>
+              <Link href="/blog" title="BLOG">
+                BLOG
+              </Link>
             </li>
           </ul>
         </div>

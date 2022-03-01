@@ -1,0 +1,112 @@
+.header {
+  height: 100vh;
+  width: 100%;
+  background-color: #289ff3;
+  background-image: linear-gradient(
+    to right bottom,
+    #289ff3,
+    #008dfb,
+    #0079fe,
+    #1562fd,
+    #5042f4
+  );
+  background-image: url(../../shared/media/images/backgroundHeader.png);
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+
+  .uil-mouse-alt {
+    font-size: 40px;
+  }
+}
+
+.containercard {
+  background-color: white;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 28px 28px 28px 0px;
+  box-shadow: 0px 6px 18px #0b082a33;
+  max-width: 85%;
+}
+
+.forminput {
+  span {
+    background-color: white;
+    border-right: none;
+    border-radius: 8px 0px 0px 8px;
+
+    i {
+      font-size: 18px;
+    }
+  }
+  input {
+    border-left: none;
+    border-radius: 0px 9px 9px 0px;
+    color: black;
+    padding-left: 0px;
+
+    ::placeholder {
+      color: black;
+    }
+  }
+}
+
+.mouseicon {
+  font-size: 35px;
+}
+
+.backgroundWaves {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 1399.98px) {
+}
+
+@media (max-width: 1199.98px) {
+  .header {
+    height: 110vh;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .containercard {
+    max-width: inherit;
+  }
+
+  .mobilecontainercard {
+    margin-top: -50%;
+  }
+
+  @media (max-height: 575.98px) {
+    .mobilecontainercard {
+      margin-top: -20%;
+    }
+
+    .header {
+      height: 200vh;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 575.98px) {
+}
+
+@media (max-width: 320.98px) {
+  .header {
+    height: 110vh;
+    padding-top: 165px;
+  }
+
+  .mobilecontainercard {
+    margin-top: -20%;
+  }
+}
