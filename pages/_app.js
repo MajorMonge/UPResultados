@@ -1,16 +1,22 @@
-import "bootstrap/dist/css/bootstrap.css";
-import "../styles/globals.css";
-
-import Popper from '@popperjs/core';
-
 import { useEffect } from "react";
+import Head from "next/head";
+
+import Layout from "../themes/Layout";
+
+import "bootstrap/dist/css/bootstrap.css";
+import "../styles/Style.css";
+import Popper from "@popperjs/core";
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     import("bootstrap/dist/js/bootstrap.bundle.min");
   }, []);
 
-  return <Component {...pageProps} />;
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  );
 }
 
 export default MyApp;
