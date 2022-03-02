@@ -4,7 +4,6 @@ import Image from "next/image";
 import styles from "./BlogPostThumbnail.module.scss";
 
 function BlogPostThumbnail(props) {
-  console.log(props.image);
 
   return (
     <Link {...props}>

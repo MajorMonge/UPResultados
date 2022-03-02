@@ -10,7 +10,6 @@ import backgroundHeader from "../../../shared/media/images/backgroundHeader.png"
 function formSubmitHandler(e) {
   e.preventDefault();
   e.target.reportValidity();
-  console.log(e.target.reportValidity());
 }
 
 function Header() {

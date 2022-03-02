@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import Head from "next/head";
 
 import Layout from "../themes/Layout";
 

@@ -8,7 +8,6 @@ function ContactForm(props) {
   function formSubmitHandler(e) {
     e.preventDefault();
     e.target.reportValidity();
-    console.log(e.target.reportValidity());
   }
 
   return (
