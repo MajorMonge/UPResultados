@@ -15,7 +15,7 @@ function BlogPostThumbnail(props) {
             backgroundImage: `url(${props.image})`,
           }}
         >
-          <p>{props.date}</p>
+          <p className="text-white">{props.date}</p>
         </div>
         <div className="container-fluid mt-3">
           <h5 className={`lh-2 fw-bold ${styles.blogPostTitle}`}>{props.title}</h5>
