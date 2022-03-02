@@ -10,7 +10,16 @@ import backgroundFooter from "../../../shared/media/images/backgroundFooter.png"
 function Footer() {
   return (
     <footer className={styles.footerComponent}>
-      <Image src={backgroundFooter} className={styles.backgroundImage} layout="fill" objectFit="cover" objectPosition="center top" priority={true} quality="100" />
+      <Image
+        src={backgroundFooter}
+        className={styles.backgroundImage}
+        alt={"Imagem de fundo"}
+        layout="fill"
+        objectFit="cover"
+        objectPosition="center top"
+        priority={true}
+        quality="100"
+      />
       <div className="container pt-5">
         <div className="row align-items-center">
           <div className="col-12 col-lg-4 text-center mb-5">

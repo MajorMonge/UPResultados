@@ -16,6 +16,7 @@ function BlogPostThumbnail(props) {
             layout="fill"
             objectFit="cover"
             objectPosition="center"
+            alt={"Imagem da notícia: " + props.title}
           />
         </div>
         <div className="container-fluid mt-3">

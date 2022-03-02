@@ -34,6 +34,7 @@ function BlogPreview() {
         objectFit="cover"
         objectPosition="center"
         quality="100"
+        alt="Fundo da seção"
       />
       <div className="container mt-5">
         <br />
