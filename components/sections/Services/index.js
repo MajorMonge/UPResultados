@@ -134,9 +134,8 @@ function Services() {
         <br />
         <Slider {...sliderDesktopSettings} className="mt-5 d-none d-lg-block">
           {services.map((service, index) => (
-            <div className="p-3">
+            <div className="p-3" key={"service#" + index}>
               <ServiceCard
-                key={"service#" + index}
                 name={service.name}
                 description={service.description}
                 icon={service.icon}
@@ -148,9 +147,8 @@ function Services() {
 
       <Slider {...sliderMobileSettings} className="mt-5 d-block d-lg-none">
         {services.map((service, index) => (
-          <div className="p-1">
+          <div className="p-1" key={"service#" + index}>
             <ServiceCard
-              key={"service#" + index}
               name={service.name}
               description={service.description}
               icon={service.icon}

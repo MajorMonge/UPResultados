@@ -15,7 +15,12 @@ import caseOmega from "../../../shared/media/images/casesOmega.webp";
 const CaseCard = (props) => {
   return (
     <div className={styles.caseCard} {...props}>
-      <Image src={props.image} layout="fill" objectFit="cover" />
+      <Image
+        src={props.image}
+        layout="fill"
+        objectFit="cover"
+        alt="Mídia case"
+      />
     </div>
   );
 };
@@ -136,12 +141,12 @@ function Cases() {
           </div>
         </Slider>
       </div>
-      
+
       <div className="col-12 mt-5 mt-lg-0 mb-3 d-flex align-items-center justify-content-center">
-          <Button>
-            <h5 className="mb-0 px-4 py-1">Ver mais</h5>
-          </Button>
-        </div>
+        <Button>
+          <h5 className="mb-0 px-4 py-1">Ver mais</h5>
+        </Button>
+      </div>
     </section>
   );
 }

@@ -12,7 +12,7 @@ function About() {
         <div className="row g-0">
           <div className="col-12 col-lg-7 d-grid align-items-end">
             <div className={styles.aboutMedia}>
-              <Image src={mediaMockup} layout="fill" objectFit="contain"/>
+              <Image src={mediaMockup} layout="fill" objectFit="contain" alt="Mídia informativa"/>
             </div>
             <div className={styles.aboutMediaBackground}></div>
           </div>

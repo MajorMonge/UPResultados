@@ -48,7 +48,6 @@ function Navbar() {
               </Link>
             </li>
             <li
-              className="nav-item"
               className={`nav-item ${
                 router.pathname == "/blog" ? "active" : ""
               }`}
