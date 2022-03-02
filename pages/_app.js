@@ -3,10 +3,10 @@ import Head from "next/head";
 
 import Layout from "../themes/Layout";
 
-import "@iconscout/unicons/css/line.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "../styles/Unicons.css";
 import "../styles/Style.css";
 import Popper from "@popperjs/core";
 
