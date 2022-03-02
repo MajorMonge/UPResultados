@@ -2,6 +2,7 @@
 
 :root {
   --text-color: #636363;
+  --title-color: #5042f4;
 }
 
 /* Default */
@@ -45,10 +46,15 @@ h1,
 h2,
 h3,
 h3,
+h4,
 h5,
 h6 {
   font-family: "Montserrat", sans-serif;
   margin-bottom: 20px;
+}
+
+.title-color {
+  color: var(--title-color);
 }
 
 p {
@@ -60,6 +66,24 @@ input {
   color: black;
   font-family: "Work sans", sans-serif;
   font-weight: 700;
+}
+
+/* Transitions */
+.fade-enter {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+.fade-exit {
+  transition: opacity 200ms;
+  opacity: 0;
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 200ms;
 }
 
 /* Navbar */

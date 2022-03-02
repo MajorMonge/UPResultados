@@ -11,7 +11,7 @@ import blogPostImage from "../../../shared/media/images/blogPost.webp";
 function BlogPreview() {
   const sliderSettings = {
     infinite: true,
-    lazyLoad: 'ondemand',
+    lazyLoad: "ondemand",
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
@@ -19,13 +19,14 @@ function BlogPreview() {
     dots: true,
     centerMode: true,
     centerPadding: "25px",
-    arrows: true
+    arrows: true,
   };
 
   return (
     <section id="blog" className={styles.blogPreviewComponent}>
-      <div className="container">
-        <h1 className="text-center mb-5">
+      <div className="container mt-5">
+        <br />
+        <h1 className="text-center mt-5 mb-5">
           <b>NOVIDADES</b> <br /> DA UP
         </h1>
         <br />
