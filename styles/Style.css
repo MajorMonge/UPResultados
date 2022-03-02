@@ -88,11 +88,11 @@ input {
 
 /* Navbar */
 .navbar {
-  background-color: transparent;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  position: absolute;
-  width: 100%;
+  background-color: transparent !important;
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+  position: absolute !important;
+  width: 100% !important;
 }
 
 .navbar .navbar-brand {
