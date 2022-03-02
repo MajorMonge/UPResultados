@@ -5,7 +5,7 @@ import styles from "./Header.module.scss";
 
 import Button from "../../objects/Button";
 
-import backgroundWaves from "../../../shared/media/images/backgroundWaves.png";
+import backgroundHeader from "../../../shared/media/images/backgroundHeader.png";
 
 function formSubmitHandler(e) {
   e.preventDefault();
@@ -17,6 +17,16 @@ function Header() {
   return (
     <>
       <header className={styles.header}>
+        <Image
+          src={backgroundHeader}
+          className={styles.backgroundImage}
+          alt={"Imagem de fundo"}
+          layout="fill"
+          objectFit="cover"
+          objectPosition="center bottom"
+          priority={true}
+          quality="100"
+        />
         <div className="container h-100 d-grid">
           <div className="row align-items-center mt-2 mt-lg-0">
             <div className="col-12 col-lg-6 col-xl-5">
