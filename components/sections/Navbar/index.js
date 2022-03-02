@@ -2,11 +2,15 @@ import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
+import styles from "./Navbar.module.scss";
+
 function Navbar() {
   const router = useRouter();
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light">
+    <nav
+      className={`navbar navbar-expand-lg navbar-light ${styles.navbarComponent}`}
+    >
       <div className="container-md">
         <a className="navbar-brand" href="#">
           LOGO
