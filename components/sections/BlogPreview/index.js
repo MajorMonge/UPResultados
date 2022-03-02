@@ -1,12 +1,12 @@
 import React from "react";
 import Slider from "react-slick";
 
-import Button from "../atoms/Button";
-import BlogPostThumbnail from "../atoms/BlogPostThumbnail";
+import Button from "../../objects/Button";
+import BlogPostThumbnail from "../../objects/BlogPostThumbnail";
 
 import styles from "./BlogPreview.module.scss";
 
-import blogPostImage from "../../shared/media/images/blogPost.webp";
+import blogPostImage from "../../../shared/media/images/blogPost.webp";
 
 function BlogPreview() {
   const sliderSettings = {

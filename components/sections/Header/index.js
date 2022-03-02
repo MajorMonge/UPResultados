@@ -3,9 +3,9 @@ import Image from "next/image";
 
 import styles from "./Header.module.scss";
 
-import Button from "../atoms/Button";
+import Button from "../../objects/Button";
 
-import backgroundWaves from "../../shared/media/images/backgroundWaves.png";
+import backgroundWaves from "../../../shared/media/images/backgroundWaves.png";
 
 function formSubmitHandler(e) {
   e.preventDefault();
