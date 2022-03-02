@@ -26,9 +26,9 @@ function BlogPreview() {
     <section id="blog" className={styles.blogPreviewComponent}>
       <div className="container mt-5">
         <br />
-        <h1 className="text-center mt-5 mb-5">
+        <h2 className="text-center mt-5 mb-5">
           <b>NOVIDADES</b> <br /> DA UP
-        </h1>
+        </h2>
         <br />
       </div>
       <div className="container">

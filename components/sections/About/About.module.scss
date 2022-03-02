@@ -1,7 +1,9 @@
 .aboutComponent {
   position: relative;
+  margin-top: 80px;
 
   .aboutMedia {
+    z-index: 2;
     position: relative;
     width: 100%;
     height: 300px;
@@ -10,7 +12,7 @@
 
   .aboutMediaBackground {
     position: absolute;
-    z-index: -1;
+    z-index: 1;
     padding: 10px;
     width: 100%;
     height: 50%;
@@ -21,6 +23,8 @@
   }
 
   .aboutDescription {
+    position: relative;
+    z-index: 4;
     height: 110%;
     background: linear-gradient(295.57deg, #4649e3 0%, #48a6f7 100%);
     border-radius: 28px 0px 0px 28px;
@@ -44,6 +48,7 @@
     position: relative;
 
     .aboutMedia {
+      z-index: 5;
       position: relative;
       width: 100%;
       height: 300px;
@@ -70,8 +75,9 @@
     .aboutMedia {
       position: relative;
       width: 100%;
-      height: 300px;
+      height: 200px;
       bottom: -50%;
+      z-index: 5;
     }
 
     .aboutMediaBackground {

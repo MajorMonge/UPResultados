@@ -44,10 +44,10 @@ function Cases() {
   return (
     <section id="cases" className={styles.casesComponent}>
       <div className="container">
-        <h1 className="text-start mb-5">
+        <h2 className="text-start mb-5">
           CONFIRA NOSSOS
           <br /> <b>CASES E CLIENTES</b>
-        </h1>
+        </h2>
       </div>
       <br />
       <div className="mt-5 mb-5 d-none d-lg-block">

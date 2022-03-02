@@ -20,10 +20,10 @@ function Header() {
         <div className="container h-100 d-grid">
           <div className="row align-items-center mt-2 mt-lg-0">
             <div className="col-12 col-lg-6 col-xl-5">
-              <h1 className="text-white">
+              <h2 className="text-white">
                 <b>MARKETING DIGITAL</b> e <b>MARKETING MÉDICO</b>
                 <br /> que dá um <b>UP</b> pra você!
-              </h1>
+              </h2>
               <br />
               <h4 className="text-white fw-normal">
                 A UP Resultados é formada por gestores de tráfego especializados
