@@ -1,4 +1,7 @@
 .testimonialComponent {
+  position: relative;
+  z-index: 10;
+  
   .testimonialPicture {
     position: absolute;
     border-radius: 200px;
