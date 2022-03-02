@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
+import Image from "next/image";
 
 import Button from "../../objects/Button";
 import BlogPostThumbnail from "../../objects/BlogPostThumbnail";
@@ -7,6 +8,7 @@ import BlogPostThumbnail from "../../objects/BlogPostThumbnail";
 import styles from "./BlogPreview.module.scss";
 
 import blogPostImage from "../../../shared/media/images/blogPost.webp";
+import backgroundBlog from "../../../shared/media/images/backgroundBlog.jpg";
 
 function BlogPreview() {
   const sliderSettings = {
@@ -24,6 +26,15 @@ function BlogPreview() {
 
   return (
     <section id="blog" className={styles.blogPreviewComponent}>
+      <Image
+        src={backgroundBlog}
+        className={styles.backgroundImage}
+        layout="fill"
+        priority={true}
+        objectFit="cover"
+        objectPosition="center"
+        quality="100"
+      />
       <div className="container mt-5">
         <br />
         <h2 className="text-center mt-5 mb-5">
@@ -68,7 +79,7 @@ function BlogPreview() {
         <Slider {...sliderSettings}>
           <div className="p-2">
             <BlogPostThumbnail
-              image={blogPostImage.src}
+              image={blogPostImage}
               href=""
               title="Título"
               date="4 fev. 2022"

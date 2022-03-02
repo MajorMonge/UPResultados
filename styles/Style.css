@@ -17,6 +17,15 @@ root {
   scrollbar-width: thin;
 }
 
+img {
+  -webkit-user-drag: none !important;
+  -khtml-user-drag: none !important;
+  -moz-user-drag: none !important;
+  -o-user-drag: none !important;
+  user-drag: none !important;
+  pointer-events: none !important;
+}
+
 a {
   color: inherit !important;
   text-decoration: none !important;
@@ -38,8 +47,8 @@ a:hover {
 :-ms-input-placeholder,
 ::-ms-input-placeholder,
 ::placeholder {
-  color: rgb(0, 0, 0) ;
-  opacity: 1 ;
+  color: rgb(0, 0, 0);
+  opacity: 1;
 }
 
 h1,

@@ -1,5 +1,7 @@
 import React from "react";
 
+import Image from "next/image";
+
 import styles from "./Testimonial.module.scss";
 
 function Testimonial(props) {
@@ -8,10 +10,9 @@ function Testimonial(props) {
       <div className="row g-0 align-items-lg-center">
         <div
           className={`col-12 col-lg-2 ${styles.testimonialPicture}`}
-          style={{
-            backgroundImage: `url(${props.image})`,
-          }}
-        ></div>
+        >
+          <Image src={props.image} layout="fill" objectFit="cover" objectPosition="center" />
+        </div>
         <div
           className={`col-12 col-lg-10 offset-lg-1 ${styles.testimonialContent}`}
         >

@@ -1,18 +1,16 @@
 .footerComponent {
+  position: relative;
   padding-top: 60px;
-  background-image: linear-gradient(
-    to right bottom,
-    #289ff3,
-    #008dfb,
-    #0079fe,
-    #1562fd,
-    #5042f4
-  );
-  background-image: url(../../../shared/media/images/backgroundFooter.png);
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 40px;
+
+  :global .container {
+    position: relative;
+    z-index: 10;
+  }
+
 }
 
 .contactlist {
