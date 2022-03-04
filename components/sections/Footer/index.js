@@ -6,6 +6,7 @@ import Link from "next/link";
 import styles from "./Footer.module.scss";
 
 import backgroundFooter from "../../../shared/media/images/backgroundFooter.webp";
+import LogoNavbar from "../../../shared/media/images/logo_negativo.webp";
 
 function Footer() {
   return (
@@ -23,15 +24,22 @@ function Footer() {
       <div className="container pt-5">
         <div className="row align-items-center">
           <div className="col-12 col-lg-4 text-center mb-5">
-            <a className="navbar-brand fs-5" href="#">
-              <h3 className="text-white">LOGO</h3>
-            </a>
+            <Link href="/">
+              <div className={"navbar-brand " + styles.navImage}>
+                <Image
+                  src={LogoNavbar}
+                  alt="Logotipo UPResultados"
+                  objectFit="contain"
+                  objectPosition="center"
+                />
+              </div>
+            </Link>
             <div>
               <p className="text-white">
                 Av. Antônio Rodrigues Teixeira Júnior, 122 - Sala 6 - Jardim
                 Carvalho, Ponta Grossa - PR, 84015-490
-                <br/>
-                <br/>
+                <br />
+                <br />
                 <span className="mt-3">CNPJ: 38.302.851/0001-61</span>
               </p>
             </div>

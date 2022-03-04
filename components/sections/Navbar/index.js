@@ -1,8 +1,11 @@
 import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 import styles from "./Navbar.module.scss";
+
+import LogoNavbar from "../../../shared/media/images/logo_negativo.webp";
 
 function Navbar() {
   const router = useRouter();
@@ -12,9 +15,17 @@ function Navbar() {
       className={`navbar navbar-expand-lg navbar-light ${styles.navbarComponent}`}
     >
       <div className="container-md">
-        <a className="navbar-brand" href="#">
-          LOGO
-        </a>
+        <Link href="/">
+          <div className={"navbar-brand " + styles.navImage}>
+            <Image
+              src={LogoNavbar}
+              alt="Logotipo UPResultados"
+              objectFit="contain"
+              height="80px"
+              layout="fill"
+            />
+          </div>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"

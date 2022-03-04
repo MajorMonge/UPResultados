@@ -93,6 +93,10 @@
   .mobilecontainercard {
     margin-top: -50%;
   }
+  
+  .header {
+    padding-top: 140px !important
+  }
 
   @media (max-height: 575.98px) {
     .mobilecontainercard {
@@ -114,7 +118,7 @@
 @media (max-width: 320.98px) {
   .header {
     height: 110vh;
-    padding-top: 165px;
+    padding-top: 220px !important
   }
 
   .mobilecontainercard {
