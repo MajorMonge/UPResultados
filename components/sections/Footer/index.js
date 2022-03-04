@@ -69,12 +69,12 @@ function Footer() {
 
               <Link href="#marketing-medico">Marketing Médico</Link>
 
-              <Link href="/blog">Blog</Link>
+              <Link href="#blog">Blog</Link>
             </div>
           </div>
         </div>
         <div className="w-100 text-center text-white">
-          UPResultados © Copyright 2018-{new Date().getFullYear()}
+          UPResultados © Copyright 2020-{new Date().getFullYear()}
         </div>
       </div>
     </footer>

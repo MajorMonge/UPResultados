@@ -67,7 +67,7 @@ function Navbar() {
                 router.pathname == "/blog" ? "active" : ""
               }`}
             >
-              <Link href="/blog" title="BLOG">
+              <Link href="#blog" title="BLOG">
                 BLOG
               </Link>
             </li>
