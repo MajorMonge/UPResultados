@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import styles from "./About.module.scss";
 
-import mediaMockup from "../../../shared/media/images/mediaMockup.png";
+import mediaMockup from "../../../shared/media/images/mediaMockup.webp";
 
 function About() {
   return (

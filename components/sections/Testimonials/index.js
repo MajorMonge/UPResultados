@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import ContactForm from "../../objects/ContactForm";
 import Testimonial from "../../objects/Testimonial";
 
-import testimonialPic from "../../../shared/media/images/drmockupPic.jpg";
+import testimonialPic from "../../../shared/media/images/drmockupPic.webp";
 
 import styles from "./Testimonials.module.scss";
 

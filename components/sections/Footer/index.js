@@ -5,7 +5,7 @@ import Link from "next/link";
 
 import styles from "./Footer.module.scss";
 
-import backgroundFooter from "../../../shared/media/images/backgroundFooter.png";
+import backgroundFooter from "../../../shared/media/images/backgroundFooter.webp";
 
 function Footer() {
   return (
@@ -30,6 +30,9 @@ function Footer() {
               <p className="text-white">
                 Av. Antônio Rodrigues Teixeira Júnior, 122 - Sala 6 - Jardim
                 Carvalho, Ponta Grossa - PR, 84015-490
+                <br/>
+                <br/>
+                <span className="mt-3">CNPJ: 38.302.851/0001-61</span>
               </p>
             </div>
           </div>

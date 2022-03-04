@@ -5,7 +5,7 @@ import styles from "./Header.module.scss";
 
 import Button from "../../objects/Button";
 
-import backgroundHeader from "../../../shared/media/images/backgroundHeader.png";
+import backgroundHeader from "../../../shared/media/images/backgroundHeader.webp";
 
 function formSubmitHandler(e) {
   e.preventDefault();

@@ -8,7 +8,7 @@ import BlogPostThumbnail from "../../objects/BlogPostThumbnail";
 import styles from "./BlogPreview.module.scss";
 
 import blogPostImage from "../../../shared/media/images/blogPost.webp";
-import backgroundBlog from "../../../shared/media/images/backgroundBlog.jpg";
+import backgroundBlog from "../../../shared/media/images/backgroundBlog.webp";
 
 function BlogPreview() {
   const sliderSettings = {
