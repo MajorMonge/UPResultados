@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 
 import styles from "./Header.module.scss";
@@ -7,12 +7,28 @@ import Button from "../../objects/Button";
 
 import backgroundHeader from "../../../shared/media/images/backgroundHeader.webp";
 
-function formSubmitHandler(e) {
-  e.preventDefault();
-  e.target.reportValidity();
-}
-
 function Header() {
+  const [nome, setNome] = useState("");
+  const [ramo, setRamo] = useState("");
+  const [cidade, setCidade] = useState("");
+  const [email, setEmail] = useState("");
+  const [telefone, setTelefone] = useState("");
+
+  function formSubmitHandler(e) {
+    e.preventDefault();
+    e.target.reportValidity();
+
+    window.open(
+      "mailto:contato@upresultados.com.br?subject=" +
+        encodeURI("Olá, eu quero um UP!") +
+        "&body=" +
+        encodeURI(
+          `Meus dados: ${nome}; ${ramo}; ${cidade}; ${email}; ${telefone}.`
+        ),
+      "_blank"
+    );
+  }
+
   return (
     <>
       <header className={styles.header}>
@@ -35,7 +51,9 @@ function Header() {
               </h2>
               <br />
               <h4 className="text-white fw-normal">
-              A UP Resultados é formada por especialistas em marketing e tráfego. Criamos estratégias assertivas para impulsionar seus resultados.
+                A UP Resultados é formada por especialistas em marketing e
+                tráfego. Criamos estratégias assertivas para impulsionar seus
+                resultados.
               </h4>
             </div>
             <div className="col-12 col-lg-5 offset-lg-1 col-xl-5 offset-xl-2 d-none d-lg-block">
@@ -46,7 +64,8 @@ function Header() {
                   EU QUERO UM <b>UP</b>!
                 </h3>
                 <p>
-                Preencha os dados abaixo e receba uma análise completa da sua área.
+                  Preencha os dados abaixo e receba uma análise completa da sua
+                  área.
                 </p>
                 <form
                   className="row g-3 mt-1"
@@ -66,6 +85,9 @@ function Header() {
                         id="contactName"
                         aria-describedby="basic-addon1"
                         required={true}
+                        onChange={(e) => {
+                          setNome(e.target.value);
+                        }}
                       />
                     </div>
                   </div>
@@ -82,6 +104,9 @@ function Header() {
                         name="contactBusiness"
                         id="contactBusiness"
                         aria-describedby="basic-addon1"
+                        onChange={(e) => {
+                          setRamo(e.target.value);
+                        }}
                       />
                     </div>
                   </div>
@@ -98,6 +123,9 @@ function Header() {
                         name="contactCity"
                         id="contactCity"
                         aria-describedby="basic-addon1"
+                        onChange={(e) => {
+                          setCidade(e.target.value);
+                        }}
                       />
                     </div>
                   </div>
@@ -115,6 +143,9 @@ function Header() {
                         id="contactEmail"
                         aria-describedby="basic-addon1"
                         required={true}
+                        onChange={(e) => {
+                          setEmail(e.target.value);
+                        }}
                       />
                     </div>
                   </div>
@@ -133,6 +164,9 @@ function Header() {
                         aria-describedby="basic-addon1"
                         pattern="[0-9]{10,}"
                         required={true}
+                        onChange={(e) => {
+                          setTelefone(e.target.value);
+                        }}
                       />
                     </div>
                   </div>
@@ -174,7 +208,8 @@ function Header() {
               EU QUERO UM <b>UP</b>!
             </h3>
             <p>
-              Preencha os dados abaixo e receba uma análise completa da sua área.
+              Preencha os dados abaixo e receba uma análise completa da sua
+              área.
             </p>
             <form
               className="row g-3 mt-1"
@@ -194,6 +229,9 @@ function Header() {
                     id="contactName"
                     aria-describedby="basic-addon1"
                     required={true}
+                    onChange={(e) => {
+                      setNome(e.target.value);
+                    }}
                   />
                 </div>
               </div>
@@ -210,6 +248,9 @@ function Header() {
                     name="contactBusiness"
                     id="contactBusiness"
                     aria-describedby="basic-addon1"
+                    onChange={(e) => {
+                      setRamo(e.target.value);
+                    }}
                   />
                 </div>
               </div>
@@ -226,6 +267,9 @@ function Header() {
                     name="contactCity"
                     id="contactCity"
                     aria-describedby="basic-addon1"
+                    onChange={(e) => {
+                      setCidade(e.target.value);
+                    }}
                   />
                 </div>
               </div>
@@ -243,6 +287,9 @@ function Header() {
                     id="contactEmail"
                     aria-describedby="basic-addon1"
                     required={true}
+                    onChange={(e) => {
+                      setEmail(e.target.value);
+                    }}
                   />
                 </div>
               </div>
@@ -261,6 +308,9 @@ function Header() {
                     aria-describedby="basic-addon1"
                     pattern="[0-9]{10,}"
                     required={true}
+                    onChange={(e) => {
+                      setTelefone(e.target.value);
+                    }}
                   />
                 </div>
               </div>

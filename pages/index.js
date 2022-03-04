@@ -63,12 +63,9 @@ export default function Index() {
         <meta name="msapplication-TileImage" content="/mstile-144x144.png" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-
       <Header />
       <Services />
       <Cases />
-      <Testimonials />
-      <BlogPreview />
     </>
   );
 }
