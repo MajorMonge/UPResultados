@@ -24,9 +24,7 @@ function About() {
               </h2>
               <br />
               <p className="text-end text-justify text-white">
-                Se você nos encontrou, seu paciente vai te encontrar também! A
-                UP Resultados é formada por Especialistas em Gestão de Tráfego
-                com mais de 7 anos de experiência de Google Ads
+                  Se você nos encontrou, seu cliente vai te encontrar também! A UP Resultados possui especialistas em gestão de tráfego com mais de 7 anos de experiência.
               </p>
             </div>
           </div>

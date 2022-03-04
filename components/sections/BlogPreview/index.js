@@ -39,7 +39,9 @@ function BlogPreview() {
       <div className="container mt-5">
         <br />
         <h2 className="text-center mt-5 mb-5">
-          <b>NOVIDADES</b> <br /> DA UP
+          <b>NOVIDADES</b> <br /> DA UP!
+          <br />
+          <small>Confira nossos conteúdos sobre marketing digital, gestão de tráfego e muito mais!</small>
         </h2>
         <br />
       </div>

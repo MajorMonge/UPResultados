@@ -13,11 +13,11 @@ function ContactForm(props) {
   return (
     <div {...props} className={`${styles.containercard} ${props.className}`}>
       <h3>
-        <b>ALÔ,</b>
-        <br />
-        EU QUERO UM <b>UP</b>.
+        <b>
+          QUERO CAPTAR <br /> MAIS LEADS!
+        </b>
       </h3>
-      <p>Envie um pedido de UP e eceba uma análise completa da sua área.</p>
+      <p>Preencha os dados abaixo e receba uma análise completa da sua área.</p>
       <form className="row g-3 mt-1" onSubmit={(e) => formSubmitHandler(e)}>
         <div className="col-12">
           <div className={`input-group mb-1 ${styles.forminput}`}>

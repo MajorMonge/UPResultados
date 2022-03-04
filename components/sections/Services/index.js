@@ -23,7 +23,7 @@ function Services() {
     centerMode: false,
     infinite: true,
     centerPadding: "60px",
-    slidesToShow: 3,
+    slidesToShow: 2,
     rows: 2,
     speed: 500,
     dots: true,
@@ -100,36 +100,14 @@ function Services() {
       description:
         "Criamos e atualizamos sua identidade visual com modernidade.",
       icon: <i className="uil uil-analysis"></i>,
-    },
-    {
-      name: (
-        <>
-          <b>IDENTIDADE</b>
-          <br /> VISUAL
-        </>
-      ),
-      description:
-        "Criamos e atualizamos sua identidade visual com modernidade.",
-      icon: <i className="uil uil-eye"></i>,
-    },
-    {
-      name: (
-        <>
-          <b>IDENTIDADE</b>
-          <br /> VISUAL
-        </>
-      ),
-      description:
-        "Criamos e atualizamos sua identidade visual com modernidade.",
-      icon: <i className="uil uil-eye"></i>,
-    },
+    }
   ];
 
   return (
     <section id="nossos-servicos" className={styles.servicesComponent}>
       <div className="container mt-5 mt-lg-1 ">
         <h2 className="text-center">
-          <b>TEMOS O UP CERTO</b> <br /> PARA O QUE VOCÊ PRECISAR{" "}
+          <b>SERVIÇOS DIGITAIS</b> <br /> <small>Conteúdos para redes sociais e ações de marketing para gerar leads</small>
         </h2>
         <br />
         <Slider {...sliderDesktopSettings} className="mt-5 d-none d-lg-block">

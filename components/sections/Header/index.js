@@ -31,12 +31,11 @@ function Header() {
             <div className="col-12 col-lg-6 col-xl-5">
               <h2 className="text-white">
                 <b>MARKETING DIGITAL</b> e <b>MARKETING MÉDICO</b>
-                <br /> que dá um <b>UP</b> pra você!
+                <br /> que dá um <b>UP</b> na sua empresa!
               </h2>
               <br />
               <h4 className="text-white fw-normal">
-                A UP Resultados é formada por gestores de tráfego especializados
-                em google ads, facebook ads e marketing de resultado.
+              A UP Resultados é formada por especialistas em marketing e tráfego. Criamos estratégias assertivas para impulsionar seus resultados.
               </h4>
             </div>
             <div className="col-12 col-lg-5 offset-lg-1 col-xl-5 offset-xl-2 d-none d-lg-block">
@@ -44,11 +43,10 @@ function Header() {
                 <h3>
                   <b>ALÔ,</b>
                   <br />
-                  EU QUERO UM <b>UP</b>.
+                  EU QUERO UM <b>UP</b>!
                 </h3>
                 <p>
-                  Envie um pedido de UP e eceba uma análise completa da sua
-                  área.
+                Preencha os dados abaixo e receba uma análise completa da sua área.
                 </p>
                 <form
                   className="row g-3 mt-1"
@@ -173,10 +171,10 @@ function Header() {
             <h3>
               <b>ALÔ,</b>
               <br />
-              EU QUERO UM <b>UP</b>.
+              EU QUERO UM <b>UP</b>!
             </h3>
             <p>
-              Envie um pedido de UP e eceba uma análise completa da sua área.
+              Preencha os dados abaixo e receba uma análise completa da sua área.
             </p>
             <form
               className="row g-3 mt-1"
