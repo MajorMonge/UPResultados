@@ -1,0 +1,26 @@
+.blogPreviewComponent {
+  position: relative;
+  background-color: #e2e2e2;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 130px;
+  padding-bottom: 250px;
+  margin-bottom: -100px;
+  z-index: 1;
+
+  div {
+    position: relative;
+    z-index: 10;
+  }
+}
+
+.blogPreviewCarouselInner {
+  :global .carousel-item {
+    padding: 10px;
+  }
+}
+
+.blogPreviewCarouselIndicators {
+  position: relative !important;
+}

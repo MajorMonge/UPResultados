@@ -1,0 +1,61 @@
+.footerComponent {
+  position: relative;
+  padding-top: 60px;
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 40px;
+  z-index: 12;
+
+  .navImage {
+    position: relative !important;
+    display: block;
+    height: 100px !important;
+    width: 200px !important;
+    cursor: pointer;
+
+    margin: 0px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  :global .container {
+    position: relative;
+    z-index: 10;
+  }
+}
+
+.contactlist {
+  li {
+    list-style-type: none;
+    color: white !important;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  i {
+    font-size: 34px;
+    margin-right: 5px;
+  }
+}
+
+.navlist {
+  a,
+  Link {
+    list-style-type: none;
+    color: white !important;
+    display: flex;
+    align-items: center;
+    transition: all;
+
+    &:hover {
+      text-shadow: 0px 6px 3px rgba(128, 128, 128, 0.308);
+      color: white !important;
+    }
+  }
+  i {
+    font-size: 34px;
+    margin-right: 5px;
+  }
+}

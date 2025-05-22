@@ -1,0 +1,50 @@
+.blogPostThumbnailComponent {
+  display: grid;
+  box-shadow: 0px 6px 18px rgba(11, 8, 42, 0.13);
+  border-radius: 12px;
+  width: 100%;
+  min-height: 400px;
+  background-color: white;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.blogPostThumbnailImage {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  border-radius: 12px 12px 0px 0px;
+  background-size: cover;
+  background-position: center;
+
+  img {
+    border-radius: 12px 12px 0px 0px;
+  }
+
+  p {
+    display: inline;
+    z-index: 2;
+    position: relative;
+    padding: 10px;
+    top: 25px;
+    left: 10px;
+    background: linear-gradient(295.57deg, #4649e3 0%, #48a6f7 100%);
+    border-radius: 12px;
+    color: white;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.blogPostTitle {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
