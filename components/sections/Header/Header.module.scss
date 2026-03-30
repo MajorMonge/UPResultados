@@ -15,7 +15,7 @@
   background-repeat: no-repeat;
   padding-top: 100px;
 
-  :global .container {
+  :global(.container) {
     position: relative;
     z-index: 10;
   }

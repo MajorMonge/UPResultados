@@ -16,16 +16,16 @@
     filter: drop-shadow(0px 6px 18px rgba(11, 8, 42, 0.13));
   }
 
-  :global .carousel-inner {
+  :global(.carousel-inner) {
     min-height: 350px;
     display: flex;
     align-items: center;
   }
 
-  :global .carousel-item {
+  :global(.carousel-item) {
     padding: 10px;
   }
-  :global .carousel-indicators {
+  :global(.carousel-indicators) {
     position: relative;
     justify-content: center;
     margin-left: 0px;
@@ -58,13 +58,13 @@
 
 @media (max-width: 575.98px) {
   .testimonialsComponent {
-    :global .carousel-inner {
+    :global(.carousel-inner) {
       min-height: 650px;
       display: flex;
       align-items: center;
     }
 
-    :global .carousel-control-next{
+    :global(.carousel-control-next) {
       display: none;
     }
   }

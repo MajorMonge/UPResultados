@@ -17,37 +17,33 @@
     }
   }
 
-  :global .navbar-toggler {
+  :global(.navbar-toggler) {
     font-size: 30px !important;
   }
 
-  :global .navbar-nav {
-    .nav-item {
-      margin-right: 16px !important;
-      color: white !important;
-      font-family: "Montserrat" !important;
-      transition: all 0.2s !important;
-    }
+  :global(.navbar-nav .nav-item) {
+    margin-right: 16px !important;
+    color: white !important;
+    font-family: var(--font-montserrat), system-ui, sans-serif !important;
+    transition: all 0.2s !important;
+  }
 
-    .nav-item {
-      a {
-        color: white !important;
-        transition: all 0.2s !important;
-        text-decoration: none !important;
+  :global(.navbar-nav .nav-item a) {
+    color: white !important;
+    transition: all 0.2s !important;
+    text-decoration: none !important;
+  }
 
-        &:hover {
-          color: white !important;
-          text-shadow: 0px 3px 8px rgba(32, 32, 32, 0.486) !important;
-        }
-      }
+  :global(.navbar-nav .nav-item a:hover) {
+    color: white !important;
+    text-shadow: 0px 3px 8px rgba(32, 32, 32, 0.486) !important;
+  }
 
-      .active {
-        font-weight: bold !important;
-      }
+  :global(.navbar-nav .nav-item .active) {
+    font-weight: bold !important;
+  }
 
-      &:hover {
-        color: white !important;
-      }
-    }
+  :global(.navbar-nav .nav-item:hover) {
+    color: white !important;
   }
 }
