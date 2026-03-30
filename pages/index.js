@@ -1,9 +1,13 @@
 import Head from "next/head";
+import dynamic from "next/dynamic";
 
 import Header from "../components/sections/Header";
 import Services from "../components/sections/Services";
-import Cases from "../components/sections/Cases";
 import Testimonials from "../components/sections/Testimonials";
+
+const Cases = dynamic(() => import("../components/sections/Cases"), {
+  ssr: false,
+});
 import BlogPreview from "../components/sections/BlogPreview";
 
 export default function Index() {
