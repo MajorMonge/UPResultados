@@ -1,5 +1,4 @@
 import React from "react";
-import Slider from "react-slick";
 
 import ContactForm from "../../objects/ContactForm";
 import Testimonial from "../../objects/Testimonial";
