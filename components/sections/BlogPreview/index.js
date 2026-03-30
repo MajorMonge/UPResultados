@@ -29,12 +29,12 @@ function BlogPreview() {
       <Image
         src={backgroundBlog}
         className={styles.backgroundImage}
-        layout="fill"
-        priority={true}
-        objectFit="cover"
-        objectPosition="center"
-        quality="100"
+        fill
+        priority
+        quality={100}
+        sizes="100vw"
         alt="Fundo da seção"
+        style={{ objectFit: "cover", objectPosition: "center" }}
       />
       <div className="container mt-5">
         <br />
@@ -80,7 +80,7 @@ function BlogPreview() {
         <Slider {...sliderSettings}>
           <div className="p-2">
             <BlogPostThumbnail
-              image={blogPostImage}
+              image={blogPostImage.src}
               href=""
               title="Título"
               date="4 fev. 2022"

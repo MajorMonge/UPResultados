@@ -17,9 +17,10 @@ const CaseCard = (props) => {
     <div className={styles.caseCard} {...props}>
       <Image
         src={props.image}
-        layout="fill"
-        objectFit="cover"
+        fill
+        sizes="(max-width: 991px) 100vw, 50vw"
         alt="Mídia case"
+        style={{ objectFit: "cover" }}
       />
     </div>
   );

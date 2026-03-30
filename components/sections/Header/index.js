@@ -20,11 +20,11 @@ function Header() {
           src={backgroundHeader}
           className={styles.backgroundImage}
           alt={"Imagem de fundo"}
-          layout="fill"
-          objectFit="cover"
-          objectPosition="center bottom"
-          priority={true}
-          quality="100"
+          fill
+          priority
+          quality={100}
+          sizes="100vw"
+          style={{ objectFit: "cover", objectPosition: "center bottom" }}
         />
         <div className="container h-100 d-grid">
           <div className="row align-items-center mt-2 mt-lg-0">

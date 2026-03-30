@@ -20,9 +20,9 @@ function Navbar() {
             <Image
               src={LogoNavbar}
               alt="Logotipo UPResultados"
-              objectFit="contain"
-              height="80px"
-              layout="fill"
+              fill
+              sizes="200px"
+              style={{ objectFit: "contain" }}
             />
           </div>
         </Link>

@@ -12,10 +12,10 @@ function BlogPostThumbnail(props) {
           <p className="text-white">{props.date}</p>
           <Image
             src={props.image}
-            layout="fill"
-            objectFit="cover"
-            objectPosition="center"
+            fill
+            sizes="(max-width: 991px) 100vw, 25vw"
             alt={"Imagem da notícia: " + props.title}
+            style={{ objectFit: "cover", objectPosition: "center" }}
           />
         </div>
         <div className="container-fluid mt-3">

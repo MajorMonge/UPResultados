@@ -11,10 +11,10 @@ function Testimonial(props) {
         <div className={`col-12 col-lg-2 ${styles.testimonialPicture}`}>
           <Image
             src={props.image}
-            layout="fill"
-            objectFit="cover"
-            objectPosition="center"
+            fill
+            sizes="125px"
             alt={"Foto do depoimento: " + props.name}
+            style={{ objectFit: "cover", objectPosition: "center" }}
           />
         </div>
         <div

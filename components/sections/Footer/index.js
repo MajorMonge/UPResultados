@@ -15,11 +15,11 @@ function Footer() {
         src={backgroundFooter}
         className={styles.backgroundImage}
         alt={"Imagem de fundo"}
-        layout="fill"
-        objectFit="cover"
-        objectPosition="center top"
-        priority={true}
-        quality="100"
+        fill
+        priority
+        quality={100}
+        sizes="100vw"
+        style={{ objectFit: "cover", objectPosition: "center top" }}
       />
       <div className="container pt-5">
         <div className="row align-items-center">
@@ -29,8 +29,9 @@ function Footer() {
                 <Image
                   src={LogoNavbar}
                   alt="Logotipo UPResultados"
-                  objectFit="contain"
-                  objectPosition="center"
+                  fill
+                  sizes="200px"
+                  style={{ objectFit: "contain", objectPosition: "center" }}
                 />
               </div>
             </Link>
